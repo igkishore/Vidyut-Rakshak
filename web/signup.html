@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <title>Signup</title>
+  <link rel="icon"  type = "image/x-icon" href="avatar.svg">
+  <style type="text/css">
+  	.img1
+  	{
+  		  margin-top: 220px;
+  		  width: 100%;
+		  max-width: 500px;
+		  height: auto;
+  	}
+  	.img2
+  	{
+  		margin-top: 100px;
+  		width: 100%;
+		max-width: 150px;
+		height: auto;
+  	}
+  	body {
+	  width:100%;
+	  height:100%;
+	  color:black;
+	  font-weight:bold;
+	  animation: myanimation 10s infinite;
+	}
+
+	@keyframes myanimation {
+	  0% {background-color: rgb(255, 140, 109);}
+	  25%{background-color:rgb(229, 196, 109);}
+	  50%{background-color:rgb(152, 224, 109);}
+	  75%{background-color:rgb(152, 223, 206);}
+	  100% {background-color: rgb(255, 140, 109);}
+	}
+  </style>
+</head>
+<body >
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-md-2 col-sm-2">
+				
+			</div>
+			<div class="col-12 col-md-6 col-sm-6" >
+					<img src="log.svg" alt="login" class="img1" >			
+			</div>	
+
+			<div class="col-12 col-md-2 col-sm-2s" >
+					<div>
+						<img src="avatar.svg" alt="avatar" class="img2">
+					</div>
+					<br>
+					<div>
+						<h1>WELCOME</h1>
+						<br>
+						<strong>Add your details</strong>
+					</div>
+					<br>
+					<div>
+						<form action="varify.js">
+							 <div class="form-group">
+						    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
+						  </div>
+						   <div class="form-group">
+						    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">
+						  </div>
+						  <div class="form-group">
+						    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Mobile number">
+						  </div>
+						  <div class="form-group">
+						    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						  </div>
+						  <div class="form-group">
+						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						  </div>
+						  <div class="form-group">
+						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+						  </div>
+						  <button type="submit" class="btn btn-primary" value="Signup">Signup</button>
+						</form>
+					</div>
+			</div>
+			<div class="col-12 col-md-2 col-sm-2">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
