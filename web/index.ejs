@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <title>Admin</title>
+  <link rel="icon"  type = "image/x-icon" href="admin.svg">
+  <style type="text/css" >
+  	#div1
+  	{
+  		width: 100%;
+  		height: 300px;
+  		background-color: #FFF8DC;
+   	}
+
+	body {
+	  width:100%;
+	  height:100%;
+	  color:black;
+	  font-weight:bold;
+	  animation: myanimation 10s infinite;
+	}
+
+	@keyframes myanimation {
+	  0% {background-color: rgb(255, 140, 109);}
+	  25%{background-color:rgb(229, 196, 109);}
+	  50%{background-color:rgb(152, 224, 109);}
+	  75%{background-color:rgb(152, 223, 206);}
+	  100% {background-color: rgb(255, 140, 109);}
+	}
+	#cardcol	{
+		margin-top: 20px;
+	}
+	#cardpic
+	{
+		align-self: center;
+		width: 150px;
+		height: auto;
+	}
+	#stat
+	{
+		margin-top: 10px;
+		width: 100%;
+		height: 100px;
+	}
+  </style>
+</head>
+<body>
+	<p><%= data[0].name %></p>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12" id="div1">
+				<div align="center">
+					<img src="blub.jpg" id="div1">
+				</div>
+			</div>			
+		</div>
+		<div id="mn">
+			<div class="row">
+				<div class="col-12 col-md-6 col-sm-6" id="cardcol">
+					<div class="card" style="width:400px">
+					  <img class="card-img-top" src="avatar.svg" alt="Card image" id="cardpic">
+					  <div class="card-body">
+					    <h4 class="card-title">John Doe</h4>
+					    <p class="card-text">Some example text.</p>
+					    <a href="#" class="btn btn-primary">See Profile</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-sm-6" >
+					<div class="row">
+						<div class="col-12 col-md-12 col-sm-12">
+							<img src="statg.jpg" id="stat">
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
