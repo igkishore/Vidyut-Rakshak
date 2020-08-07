@@ -21,7 +21,6 @@ app.set('view engine','ejs');
 app.set('views', __dirname + '/templates');
 app.set('views',__dirname);
 
-
 app.set('trust proxy', 1) // trust first proxy
 app.use(session({
   secret: 'SmritiMakesMeBetter',
@@ -131,10 +130,10 @@ app.post("/register-done",function(req,res){
 						id:req.body.id,
             mobile:req.body.mobile
 					}
-					var checkobj={	
-							id:req.body.id,
-				            name:req.body.name,
-				            mobile:req.body.mobile
+					var checkobj={
+						id:req.body.id,
+            name:req.body.name,
+            mobile:req.body.mobile
 					}
 					db.members.find(checkobj,function(err,data){
 						if(err)
@@ -194,4 +193,3 @@ app.set('port',process.env.PORT||5000)
 
 var server = app.listen(app.get('port'),function(){
 console.log("SERVER STARTED SUCCESSFULLY................")
-})
